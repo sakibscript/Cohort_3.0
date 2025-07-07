@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+  </head>
+  <body>
+    <div>
+      <h1>Todo List</h1>
+      <input id="input" type="text" placeholder="Enter todo here" />
+      <button onclick="addTodo()">Add Todo</button>
+    </div>
+
+      <div id="todos">
+      </div>
+    </div>
+  </body>
+
+  <script>
+    let currentIndex = 1;
+    function addTodo() {
+      const inputElement = document.querySelector("#input");
+
+      const textNode = document.createElement("div");
+      textNode.innerHTML =
+        "<div id='todo-"+currentIndex+"'><h4>" +
+        inputElement.value +
+        "</h4><button onclick='deleteTodo("+currentIndex+")'>Delete</button></div>";
+
+      const parentElement = document.querySelector("#todos");
+      parentElement.appendChild(textNode);
+      currentIndex++;
+    }
+
+    function deleteTodo(index) {
+      const element = document.querySelector("#todo-"+index);
+      element.parentNode.removeChild(element); 
+    }
+  </script>
+</html>
