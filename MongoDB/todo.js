@@ -5,7 +5,7 @@ const bcrypt = require("bcrypt");
 const { UserModel, TodoModel } = require("./db");
 const auth = require("./auth");
 
-const JWT_SECRET = "sakib12345";
+const JWT_SECRET = "";
 mongoose.connect(
   "mongodb+srv://sakib:Sakib12345@cluster0.kgorqfq.mongodb.net/todo-app-db"
 );
