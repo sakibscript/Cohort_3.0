@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
@@ -5,10 +6,8 @@ const bcrypt = require("bcrypt");
 const { UserModel, TodoModel } = require("./db");
 const auth = require("./auth");
 
-const JWT_SECRET = "";
-mongoose.connect(
-  "mongodb+srv://sakib:Sakib12345@cluster0.kgorqfq.mongodb.net/todo-app-db"
-);
+const JWT_SECRET = process.env.JWT_SECRET;
+mongoose.connect(process.env.MONGODB_URL);
 
 const app = express();
 app.use(express.json());
@@ -36,10 +35,9 @@ app.post("/signin", async function (req, res) {
 
   const user = await UserModel.findOne({
     email: email,
-    password: password,
   });
 
-  const passwordMatch = bcrypt.compare(password, user.password);
+  const passwordMatch = await bcrypt.compare(password, user.password);
 
   if (user && passwordMatch) {
     const token = jwt.sign(
@@ -64,7 +62,7 @@ app.post("/todo", auth, async function (req, res) {
 
   await TodoModel.create({
     title: title,
-    done: done,
+    done: done ?? false,
     userId: req.userId,
   });
   res.json({
@@ -84,4 +82,4 @@ app.get("/todos", auth, async function (req, res) {
   });
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
