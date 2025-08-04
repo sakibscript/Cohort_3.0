@@ -1,6 +1,7 @@
+///useState example
 import { createElement, useState } from "react";
 
-export default function Counter() {
+export default function CounterApp() {
   const [count, setCount] = useState(0);
   return (
     <div>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Todo() {
+export default function TodoApp() {
   const [todos, setTodos] = useState([
     {
       title: "Go to gym",
