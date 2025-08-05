@@ -5,11 +5,11 @@ import TodoApp from "./TodoApp.jsx";
 import CounterApp from "./CounterApp.jsx";
 import CounterApp2 from "./CounterApp2.jsx";
 import CounterApp3 from "./CounterApp3.jsx";
-import App from "./PostTabApp.jsx";
 import PostApp from "./PostApp.jsx";
 import ToggleMessageApp from "./toggleMessage.jsx";
 import NotificationApp from "./NotificationApp.jsx";
 import PostTabApp from "./PostTabApp.jsx";
+import CardApp from "./CardApp.jsx";
 
 
 createRoot(document.getElementById("root")).render(
@@ -19,9 +19,10 @@ createRoot(document.getElementById("root")).render(
   // <CounterApp3 />
   // <TodoApp />
   // <App />
-  <PostApp />
+  // <PostApp />
   // <ToggleMessageApp />
   // <NotificationApp/>
   // <PostTabApp />
+  <CardApp />
   // </StrictMode>
 );

@@ -1,4 +1,4 @@
-//useeffect example
+//useEffect example
 
 import { useEffect, useState } from "react";
 
