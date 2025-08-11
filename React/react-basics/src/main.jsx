@@ -10,7 +10,8 @@ import ToggleMessageApp from "./toggleMessage.jsx";
 import NotificationApp from "./NotificationApp.jsx";
 import PostTabApp from "./PostTabApp.jsx";
 import CardApp from "./CardApp.jsx";
-
+import ModalApp from "./ModalApp.jsx";
+import CollapsibleApp from "./CollapsibleApp.jsx";
 
 createRoot(document.getElementById("root")).render(
   // <StrictMode>
@@ -23,6 +24,8 @@ createRoot(document.getElementById("root")).render(
   // <ToggleMessageApp />
   // <NotificationApp/>
   // <PostTabApp />
-  <CardApp />
+  // <CardApp />
+  // <ModalApp />
+  <CollapsibleApp />
   // </StrictMode>
 );
