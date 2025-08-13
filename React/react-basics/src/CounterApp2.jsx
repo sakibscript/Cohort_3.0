@@ -1,4 +1,4 @@
-///useEeffect example
+///useEffect example
 import { useEffect, useState } from "react";
 
 export default function CounterApp2() {

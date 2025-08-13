@@ -12,6 +12,10 @@ import PostTabApp from "./PostTabApp.jsx";
 import CardApp from "./CardApp.jsx";
 import ModalApp from "./ModalApp.jsx";
 import CollapsibleApp from "./CollapsibleApp.jsx";
+import SPA_Router_ExampleApp from "./SPA-Router-ExampleApp.jsx";
+import UseRefExampleApp from "./useRefExampleApp.jsx";
+import TimeApp from "./TimeApp.jsx";
+import ScrollMessageApp from "./scrollMessageApp.jsx";
 
 createRoot(document.getElementById("root")).render(
   // <StrictMode>
@@ -26,6 +30,10 @@ createRoot(document.getElementById("root")).render(
   // <PostTabApp />
   // <CardApp />
   // <ModalApp />
-  <CollapsibleApp />
+  // <CollapsibleApp />
+  // <SPA_Router_ExampleApp />
+  // <UseRefExampleApp />
+  // <TimeApp />
+  <ScrollMessageApp />
   // </StrictMode>
 );
