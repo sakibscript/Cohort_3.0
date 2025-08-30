@@ -16,6 +16,15 @@ import SPA_Router_ExampleApp from "./SPA-Router-ExampleApp.jsx";
 import UseRefExampleApp from "./useRefExampleApp.jsx";
 import TimeApp from "./TimeApp.jsx";
 import ScrollMessageApp from "./scrollMessageApp.jsx";
+import BulbApp from "./BulbApp.jsx";
+import CountStateApp from "./CountStateApp.jsx";
+import UseCounterApp from "./useCounterApp.jsx";
+import UseFetchApp from "./useFetchApp.jsx";
+import UsePrevApp from "./usePrevApp.jsx";
+import UseDebounceApp from "./useDebounceApp.jsx";
+import CounterContextApi from "./recoil/CounterContextApi.jsx";
+import CounterRecoilApp from "./recoil/CounterRecoilApp.jsx";
+import SelectorApp from "./recoil/SelectorApp.jsx";
 
 createRoot(document.getElementById("root")).render(
   // <StrictMode>
@@ -34,6 +43,15 @@ createRoot(document.getElementById("root")).render(
   // <SPA_Router_ExampleApp />
   // <UseRefExampleApp />
   // <TimeApp />
-  <ScrollMessageApp />
+  // <ScrollMessageApp />
+  // <BulbApp />
+  // <CountStateApp />
+  // <UseCounterApp />
+  // <UseFetchApp />
+  // <UsePrevApp />
+  // <UseDebounceApp />
+  // <CounterContextApi />
+  // <CounterRecoilApp />
+  <SelectorApp />
   // </StrictMode>
 );
