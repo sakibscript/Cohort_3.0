@@ -22,9 +22,12 @@ import UseCounterApp from "./useCounterApp.jsx";
 import UseFetchApp from "./useFetchApp.jsx";
 import UsePrevApp from "./usePrevApp.jsx";
 import UseDebounceApp from "./useDebounceApp.jsx";
-import CounterContextApi from "./recoil/CounterContextApi.jsx";
 import CounterRecoilApp from "./recoil/CounterRecoilApp.jsx";
 import SelectorApp from "./recoil/SelectorApp.jsx";
+import AsyncQueriesApp from "./recoil/asyncQueriesApp.jsx";
+import AtomFamilyApp from "./recoil/atomfamilyApp.jsx";
+import SelectorFamilyApp from "./recoil/selectorFamilyApp.jsx";
+import LoadableExampleApp from "./loadableExampleApp.jsx";
 
 createRoot(document.getElementById("root")).render(
   // <StrictMode>
@@ -52,6 +55,10 @@ createRoot(document.getElementById("root")).render(
   // <UseDebounceApp />
   // <CounterContextApi />
   // <CounterRecoilApp />
-  <SelectorApp />
+  // <SelectorApp />
+  // <AsyncQueriesApp />
+  // <AtomFamilyApp />
+  // <SelectorFamilyApp />
+  <LoadableExampleApp />
   // </StrictMode>
 );
